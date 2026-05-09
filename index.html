@@ -1,0 +1,225 @@
+﻿<html>
+	<head>
+		<title>Juanorte - O Think Tank da Metrópole do Cariri</title>
+		
+		<!-- metas -->
+		<meta charset="utf-8"/>
+		<meta name="author" content="gms - G.M. Sousa Prestação de Serviços (gmsousame@gmail.com)"/>
+		<meta name="keywords" content="juanorte, juazeiro do norte, cariri, ceará"/>
+		<meta name="description" content="O Think Tank da Metrópole do Cariri."/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+		<!--/ metas -->
+		
+		<!-- styles -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"  />
+		<link rel="stylesheet" href="styles.css" type="text/css" />
+        <link rel="font" id="arialblack" src="/stuff/fonts/myfont.ttf" />
+        <!--/ styles -->
+        
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+		<script>       
+		function menu() {
+			$('.nav-toggle').click(function() {
+				if($(".nav").hasClass("side-fechado")) {
+					$('.nav').animate({
+				    left: "0px",
+					}, 100, function() {
+				    $(".nav").removeClass("side-fechado");
+					});
+					$('.tudo').animate({
+				    left: "175px",
+					}, 100);
+				}
+				else {
+					$('.nav').animate({
+				    left: "-175px",
+					}, 100, function() {
+					    $(".nav").addClass("side-fechado");
+					});
+						$('.tudo').animate({
+				    left: "0px",
+					}, 100);
+				}
+			});
+		}
+	
+		// menu sidebar
+			$(window).resize(function() {
+				var tamanhoJanela = $(window).width();
+					$(".nav-toggle").remove();
+		
+			if (tamanhoJanela < 990) { 
+					$('.nav').css('left', '-175px').addClass('side-fechado');
+					$('.nav').append( "<div class='nav-toggle'><img src='img/icon_menu.gif' alt='' border='0' style='vertical-align:-9px'> MENU</div>" );
+ 		    		$('.tudo').css("left", 0);
+					} else {
+					$('.nav').css('left', '0px').addClass('side-fechado');
+					}
+		
+			menu();
+			});
+	
+			$(document).ready(function() {
+				var tamanhoJanela = $(window).width();
+					$(".nav-toggle").remove();
+		
+			if (tamanhoJanela < 990) { 
+					$('.nav').css('left', '-175px').addClass('side-fechado');
+					$('.nav').append( "<div class='nav-toggle'><img src='img/icon_menu.gif' alt='' border='0' style='vertical-align:-9px'> MENU</div>" );
+					} else {
+					$('.nav').css('left', '0px').addClass('side-fechado');
+					}
+		
+			menu();
+			});
+			</script>
+            
+        <!--/ scripts -->
+        
+	</head>
+
+	<body>
+    <div id="tudo" class="tudo">
+
+    <!-- topo/início -->
+    	<header>
+        
+        	<!-- social/início -->
+            <div class="social">
+                <a href="#"><div class="feed"></div></a>
+            	<a href="#"><div class="facebook"></div></a>
+            	<a href="#"><div class="email"></div></a>
+            </div>
+            <!-- social/fim -->
+        
+            <div class="topo1">21/10/2015</div>
+            <div class="topo2">O primeiro jornal fast-news do Nordeste</div>
+            <div class="topo3"><a href="#">JUANORTE</a></div>
+            <div class="topo4">O Think Tank da Metrópole do Cariri</div>
+        </header>
+    <!-- topo/fim -->
+    
+    </div>
+
+
+    <!-- menu/início -->
+	<nav class="nav nav-aberta clearfix">
+		<div class="wrap">
+			<ul class="listaNav">
+		      <li><a href="#">CALENDÁRIO</a></li>
+		      <li><a href="#">CIDADE</a></li>
+		      <li><a href="#">CINE</a></li>
+		      <li><a href="#">CREDO</a></li>
+		      <li><a href="#">ESTÁTUA</a></li>
+		      <li><a href="#">JUABC</a></li>
+		      <li><a href="#">LOCALIZAÇÃO</a></li>
+ 		   	  <li><a href="#">METROJUÁ</a></li>
+		      <li><a href="#">QUEM SOMOS</a></li>
+ 		   	</ul>
+		</div>
+        <div class="clearfix"></div>
+	</nav>
+    <!-- menu/fim -->
+
+
+	<!-- conteúdo/início -->
+    <div id="tudo" class="tudo">
+    	<div class="conteudo">
+        
+        	<div class="principal">
+            
+            	<div class="juazeiro_mosaico">
+                	<img src="img/juazeiro_mosaico.jpg" alt="" border="0">
+                </div>
+            
+            	<div class="manchete">
+                	<h1>CLICKJUÁ</h1>
+                	BRISTOL JUÁ, INTERNACIONAL
+                </div>
+            	<div class="destaque">
+                    <div class="foto">
+                        <img src="img/conteudo_clickjua_foto001.jpg" alt="" border="0">
+                    </div>
+
+                    <img src="img/conteudo_clickjua_tablet.png" alt="" border="0" class="destaque">
+                </div>
+            	<div class="destaque_texto">
+                	Com 266 mil habitantes, PIB de 2,4 bilhões e 2,5 milhões de visitantes ao ano, Juazeiro do Norte está acelerando seu desenvolvimento como Polo Turístico do Cariri. Mais nova atração é este Bristol Garden Hotel, moderno e arrojado, com 22 andares e 238 apartamentos, no bairro nobre Lagoa Seca, quatro estrelas categoria superior, padrão internacional. Investimento de R$ 32 milhões. Já está erguido e vai ser inaugurado em dezembro de 2016. Primeiro hotel flats do Cariri, o Bristol Garden vai reforçar, valorizar e promover ainda mais o Juazeiro no mapa do turismo brasileiro.
+                </div>
+                
+    		<!-- painel/início -->
+    		<div class="painel">
+   				<div class="titulo">PAINEL</div>
+    			<div class="letreiro">
+  			    <marquee>Exemplo de notícia</marquee>
+                </div>
+  			</div>
+    		<!-- painel/fim -->
+                
+            </div>
+            
+        
+        	<!-- barra lateral/início -->
+        	<div class="sidebar">
+            	<div class="colunario">COLUNÁRIO</div>
+                    <section class="colunario">
+                      <h1><a href="#">Menezes Barbosa</a></h1>
+                      <ul>
+                        <li>Adeus às Chuvas</li>
+                      </ul>
+                    </section>
+                    <section class="colunario">
+                      <h1><a href="#">Jota Alcides</a></h1>
+                      <ul>
+                        <li>Cidade do Automóvel</li>
+                      </ul>
+                    </section>
+                    <section class="colunario">
+                      <h1><a href="#">Thiago Magalhães</a></h1>
+                      <ul>
+                        <li>Legado do Dr. Mauro</li>
+                      </ul>
+                    </section>
+                    <section class="colunario">
+                      <h1><a href="#">Abraão Batista</a></h1>
+                      <ul>
+                        <li>Delação Premiada</li>
+                      </ul>
+                    </section>
+                    <section class="colunario">
+                      <h1><a href="#">Geová Sobreira</a></h1>
+                      <ul>
+                        <li>Crise de Crises</li>
+                      </ul>
+                    </section>
+                    <section class="colunario">
+                      <h1><a href="#">Nivaldo Cordeiro</a></h1>
+                      <ul>
+                        <li>PIB Cairá 3%</li>
+                      </ul>
+                    </section>
+                    <section class="colunario">
+                      <h1><a href="#">Pereira Gondim</a></h1>
+                      <ul>
+                        <li>O Rancor da Igreja</li>
+                      </ul>
+                    </section>
+                    <section class="colunario">
+                      <h1><a href="#">Nome de colunista</a></h1>
+                      <ul>
+                        <li>Título de artigo</li>
+                      </ul>
+                    </section>
+                </div>
+            </div>
+        	<!-- barra lateral/fim -->
+        
+        </div>
+	</div>
+    <!-- conteúdo/fim -->  
+          
+	</body>
+
+</html>
