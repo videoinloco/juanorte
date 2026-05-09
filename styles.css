@@ -5,36 +5,29 @@ html, body {
 	padding:0;
 }
 
-@import url('https://fonts.cdnfonts.com/css/arial');
-@import url('https://fonts.cdnfonts.com/css/arial-black');
-
-@font-face {
-    font-family: 'Arial';
-    src: local('Arial');
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-@font-face {
-    font-family: 'Arial Italic';
-    src: local('Arial Italic');
+.normal {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.italic {
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'Arial Bold';
-    src: local('Arial Bold');
+.bold {
     font-weight: bold;
 }
 
-@font-face {
-    font-family: 'Arial Bold Italic';
-    src: local('Arial Bold Italic');
+.bold-italic {
+    font-weight: bold;
     font-style: italic;
-    font-weight: bold;
 }
 
-@font-face {
-    font-family: 'Arial Black';
-    src: local('Arial Black');
+.black {
     font-weight: 900;
 }
 
